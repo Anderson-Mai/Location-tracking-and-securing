@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+    package="anderson.android.trackingbase"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <!-- android:installLocation="preferExternal" -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+   <uses-permission android:name="android.permission.ACTION_VIEW"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   <uses-permission android:name="android.permission.SDCARD_WRITE" />
+   <uses-permission android:name="android.permission.ACTION_CALL" />
+   <uses-permission android:name="android.permission.ACTION_DIAL" />
+   <uses-permission android:name="android.permission.CALL_PHONE" />  
+   <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" /> 
+   <uses-permission android:name="android.permission.READ_CONTACTS" />
+   <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+   <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+   <uses-permission android:name="android.permission.READ_SMS" />
+   <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+   <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />    
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.INTERNET" />   
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />  
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+     <uses-permission android:name="android.permission.VIBRATE" />
+     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INSTALL_DRM" />  
+    
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="26" />
+    <!-- :theme="@android:style/Theme.NoTitleBar" -->
+    <application android:icon="@drawable/icon_locationtracker"
+    		     android:label="@string/app_name"
+    		     android:screenOrientation="portrait"
+    		     >
+       <!--   <activity android:name="androidOne.google.apps.video_msg.Intro_Animation" -->
+        <activity android:name="anderson.android.trackingbase.DeviceActivity"
+        		  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="anderson.android.trackingbase.KickOffClientConnection"
+            android:screenOrientation="portrait"
+            />
+
+          <activity android:name="anderson.android.device_one.RetrieveClientLocationOne"
+             android:screenOrientation="portrait"
+          />
+
+        <activity android:name="anderson.android.trackingbase.SelectAccount"
+             android:screenOrientation="portrait"
+          />
+
+        <activity android:name="anderson.android.device_one.SettingPageOne"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name="anderson.android.device_two.SettingPageTwo"
+            android:screenOrientation="portrait"
+            />
+
+             <activity android:name="anderson.android.trackingbase.ViewSetUpCurrentLocation"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name="anderson.android.trackingbase.DeviceAlarmActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name="anderson.android.trackingbase.Display_All"
+            android:screenOrientation="portrait"
+            />
+
+        <receiver android:name="anderson.android.trackingbase.SMSBaseReceiver">
+            <intent-filter android:priority="99999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="anderson.android.trackingbase.NewDevicesReceiver">
+            <intent-filter android:priority="99999">
+                <action android:name="NEW_DEVICE_ADDED_ACTION"/>
+            </intent-filter>
+        </receiver>
+
+      <receiver android:name="anderson.android.trackingbase.DeviceAlarmReceiver">
+            <intent-filter >
+                <action android:name="SET_ALARM_ACTION"/>
+                <action android:name="STOP_ALARM_ACTION"/>
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAag3p82WXShZXKfFANz0N5JlQOTmFWIPI" />
+    </application>
+
+
+
+</manifest> 

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+   
+       <TextView  android:id="@+id/break_line"
+			      android:layout_width="match_parent"
+				  android:layout_height="3dp" 
+				  android:layout_marginBottom="3dp"
+				  android:background="#0080B4">
+	   </TextView>
+
+        <TextView android:id="@+id/ClientCurrentLocation" 
+				android:layout_width="240dp"
+				android:textSize="22sp"
+				android:background="@drawable/blue_background"
+				android:layout_height="60dp"
+				android:gravity="center"
+			    android:layout_marginTop="20dp"
+			    android:text="Anonymous"
+				android:clickable="true"
+				android:textColor="@color/white"
+			android:layout_below="@+id/break_line"
+			android:layout_centerHorizontal="true" />
+    
+
+        	 
+        <TextView  android:id="@+id/break_line_two"
+			       android:layout_width="match_parent"
+				   android:layout_height="1dp"
+			       android:layout_marginTop="20dp"
+				   android:layout_below="@+id/ClientCurrentLocation"
+				   android:background="#BFE2F9">
+	   </TextView>     
+	   
+       <ListView
+   		   	    	android:id="@+id/Displayer"
+   		   	    	android:layout_width="fill_parent"
+   		   	    	android:layout_height="400dp"
+   		   	        android:background="#00000000"
+   		   	        android:divider="#BFE2F9"
+   		   	        android:dividerHeight="1dp"
+   		   	    	android:textSize="16sp"
+   		   	    	android:layout_below="@+id/break_line_two"
+   		   	    	android:scrollbarStyle="insideOverlay">
+   		   		</ListView>
+
+	<TextView  android:id="@+id/break_line_three"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginTop="8dp"
+		android:layout_below="@+id/Displayer"
+		android:background="#BFE2F9">
+	</TextView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_black">#252525</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bg_white">#FFFFFFFF</color>
+	<color name="blue">#FF00ACED</color>
+    <color name="text_hint_color_light_gray">#555555</color>
+    <color name="red">#FF0000</color>
+
+    <!--Locator app -->
+
+    <color name="black">#000000</color>
+	<color name="grey">#D3D3D3</color>
+
+
+    <color name="light_blue">#D2E0ED</color>
+    <color name="bg_color">#F5F5F5</color>
+	
+</resources>

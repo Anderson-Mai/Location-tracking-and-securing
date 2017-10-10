@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/secondSection"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:weightSum="5.6"
+        android:orientation="horizontal"
+        android:background="#00000000">
+
+        <RelativeLayout
+            android:id="@+id/SectionOne"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#00000000">
+
+            <Button
+                android:id="@+id/deviceName"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:text="Brandon"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:background="#008000"
+                android:textSize="16sp"
+                android:textStyle="italic|bold"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SectionTwo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000">
+
+            <Button
+                android:id="@+id/locationButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/location" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SectionThree"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="#00000000">
+
+            <Button
+                android:id="@+id/setupButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/setup" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SectionFour"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="#00000000">
+
+            <Button
+                android:id="@+id/secureDistanceButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/unsecured_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SectionFive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000">
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/trackit_icon" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

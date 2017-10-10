@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/HidingApp"
+        android:title="Hiding App"/>
+    <item android:id="@+id/CloseApp"
+        android:title="Close App" />
+    <item android:id="@+id/UninstallApp"
+        android:title="Remove App" />
+    <item android:id="@+id/KickupClient"
+        android:title="Request Connection" />
+    <item android:id="@+id/DisplayAll"
+        android:title="See All Device Locations" />
+</menu>

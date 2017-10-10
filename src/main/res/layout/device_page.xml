@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+
+	<TextView
+		android:id="@+id/headerBarSection"
+		android:layout_width="match_parent"
+		android:layout_height="5dp"
+		android:layout_marginRight="3dp"
+		android:layout_marginLeft="3dp"
+		android:layout_marginTop="3dp"
+		android:background="@drawable/green320">
+
+	</TextView>
+
+	<LinearLayout
+                android:id="@+id/WrappedViewTwo"
+                android:layout_width="fill_parent"
+                android:layout_height="400dp"
+				android:orientation="vertical"
+				android:layout_marginLeft="10dp"
+				android:layout_marginStart="10dp"
+		        android:layout_below="@+id/headerBarSection">
+
+		 		<ListView
+   		   	    	android:id="@+id/gmailContactInbox"
+   		   	    	android:layout_width="fill_parent"
+   		   	    	android:layout_height="400dp"
+   		   	    	android:divider="#CCCCCC"
+   		   	    	android:layout_marginLeft="5dp"
+   		   	    	android:layout_marginRight="5dp"
+   		   	        android:dividerHeight="1dp"
+   		   	    	android:background="#00000000">"
+   		   		</ListView>
+
+   		   		 <TextView
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_marginLeft="5dp"
+   		   	    	android:layout_marginRight="5dp"
+					android:id="@+id/bottomline"
+					android:background="#434343">
+  	         </TextView>
+   		  </LinearLayout>
+
+	<TextView
+		android:id="@+id/Announce_Section"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:text="Brandon gets alarmed ..."
+		android:gravity="center"
+		android:textSize="18sp"
+		android:textColor="@color/red"
+		android:visibility="gone"
+		android:background="@color/bg_color"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="20dp">
+	</TextView>
+
+</RelativeLayout>
+	
+	
