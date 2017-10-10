@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_grey"
+    android:orientation="vertical"
+    >
+	
+      <TextView  android:id="@+id/header"
+			      android:layout_width="match_parent"
+				  android:layout_height="3dp" 
+				  android:layout_marginBottom="3dp"
+				  android:background="#0080B4">
+	  </TextView>
+    
+    
+     <RelativeLayout android:layout_width="fill_parent" 
+        android:id="@+id/topHeaderLayout" 
+        android:background="@drawable/titlebar" 
+        android:gravity="center" 
+        android:layout_height="50dip" 
+        android:orientation="horizontal"
+         android:layout_below="@+id/header">
+        
+        
+		 <Button
+           	 	android:id="@+id/SHome"
+            	android:layout_width="60dp"
+            	android:layout_height="fill_parent"
+            	android:background="@drawable/btn_home"
+            	android:gravity="center"
+            	android:layout_marginLeft="10dp"
+            	android:layout_marginTop="3dp"
+            	android:layout_marginBottom="3dp"
+            	android:layout_alignParentLeft="true"
+            	android:typeface="sans"
+            	android:textColor="@color/white">
+   			</Button>
+		
+		
+   			<TextView
+		      android:id="@+id/head_bar"
+		      style="@style/screenTitleText"
+		      android:layout_width="160dp"
+		      android:layout_height="fill_parent"
+		      android:layout_alignParentTop="true"
+		      android:layout_centerHorizontal="true"
+		      android:gravity="center"
+		      android:text="Tracking History"
+		      android:textColor="@color/white"
+		      android:textSize="18sp"
+		      android:typeface="sans" />
+   				  
+   			<TextView
+   				android:id="@+id/addButton"
+            	android:layout_width="50dp"
+            	android:layout_height="fill_parent"
+            	android:background="#00000000"
+            	android:gravity="center"
+            	android:layout_marginRight="15dp"
+            	android:layout_marginTop="3dp"
+            	android:layout_marginBottom="3dp"
+            	
+            	android:typeface="sans"
+            	android:layout_alignParentRight="true">
+   			</TextView>
+   			   		
+	</RelativeLayout>
+	       <!--  android:background="@drawable/blue320"    -->    
+    <ListView
+         
+        android:id="@+id/unreadmsglist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="55dp"
+        android:textSize="16sp"
+        android:divider="@drawable/background_grey"
+        android:layout_below="@+id/topHeaderLayout"
+        android:dividerHeight="5dip">
+        
+    </ListView>
+                      
+</RelativeLayout>
+          		
+
+
+

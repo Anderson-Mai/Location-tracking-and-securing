@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  
+      <LinearLayout android:orientation="vertical" 
+        android:layout_height="fill_parent" 
+        android:id="@+id/linearLayout1" 
+        android:layout_width="fill_parent"
+        android:padding="0dip" >
+         <TabWidget 
+        	android:layout_width="fill_parent" 
+        	android:id="@android:id/tabs" 
+        	android:layout_height="70dip"
+        	android:layout_marginBottom="-7dip"
+        	android:layout_gravity="center" 
+        	android:padding="0dip">
+        </TabWidget>
+        
+        
+        
+    <!--     <LinearLayout android:id="@+id/MenuDisplayBar"
+			android:layout_width="fill_parent" 
+			android:layout_height="26dip"
+			android:background="@drawable/menu_3_rail"
+			android:weightSum="3">      
+			
+             
+		    	<TextView android:id="@+id/Wallet"
+				android:layout_width="fill_parent" 
+				android:layout_height="26dip"
+				android:text="Unreaded SMS"
+				android:textSize="14sp"
+				android:gravity="center"
+				android:typeface="sans"
+				android:layout_weight="1"     
+				android:paddingBottom="1dip"/>
+
+		    
+			<TextView android:id="@+id/Payments" 
+			    android:layout_width="fill_parent"
+				android:layout_height="26dip" 
+				android:gravity="center"
+				android:textSize="14sp"
+				android:text="Readed SMS"
+				android:typeface="sans"
+				android:layout_weight="1"    
+				android:paddingBottom="1dip"/>
+
+		
+			<TextView android:id="@+id/Locate" 
+			    android:layout_width="fill_parent"
+				android:layout_height="26dip" 
+				android:gravity="center"
+				android:textSize="14sp"
+				android:typeface="sans"
+				android:text="Back"
+				android:layout_weight="1"      
+				android:paddingBottom="1dip"/>
+		</LinearLayout>
+   -->
+    	 <FrameLayout android:id="@android:id/tabcontent" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent">
+        </FrameLayout>
+     </LinearLayout>
+      
+    
+</TabHost>

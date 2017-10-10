@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ECECEC" 
+    android:orientation="vertical" >
+    
+  <RelativeLayout
+	        android:id="@+id/HeaderLayout" 
+	        android:background="@drawable/green320"
+	        android:layout_height="110dp" 
+	        android:layout_width="match_parent"
+	        android:orientation="horizontal"
+	        android:layout_marginTop="3dp"
+	        android:layout_marginRight="3dp"
+			android:layout_marginLeft="3dp"
+	        android:layout_below="@+id/break_line"
+	        >
+	        
+             <TextView
+		      android:id="@+id/title"
+		      style="@style/screenTitleText"
+		      android:layout_width="match_parent"
+		      android:layout_height="30dp"
+		      android:background="#00000000"
+		      android:gravity="center"
+		      android:text="Tracking progress"
+		      android:textColor="@color/white"
+		      android:textSize="18sp" 
+		      android:textStyle="italic"
+		      android:typeface="sans" />
+             
+	         <RelativeLayout
+	              android:id="@+id/Options_line"
+	              android:layout_width="fill_parent"
+	              android:layout_height="60dp"
+	              android:layout_below="@+id/title"
+	              android:layout_marginTop="10dp"
+	              android:background="#00000000"
+	              android:orientation="horizontal" >
+			        
+		   		    <Button 
+		   		        android:id="@+id/MainPage"
+						android:layout_width="60dip" 
+						android:layout_height="60dip"
+						android:background="@drawable/back_button"
+						android:layout_centerInParent="true"/>
+  		
+     			</RelativeLayout>
+        </RelativeLayout>
+        
+         <TextView android:id="@+id/Displayer" 
+			android:layout_width="240dp" 
+			android:textSize="14sp"  
+			android:layout_centerInParent="true" 
+			android:layout_height="120dp" 
+			android:gravity="center"
+			android:text=" *** TRACKING MOVEMENT *** "
+			android:textStyle="bold"
+			android:textColor="@color/orange" />
+
+	</RelativeLayout>  
+	
+	

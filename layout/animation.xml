@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	 
+    
+    
+    <LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_gravity="center_horizontal"
+		android:gravity="center_vertical|center_horizontal" 
+		android:layout_height="fill_parent" 
+		android:padding="0dip" 
+		android:layout_weight="1">
+
+
+		    	<LinearLayout
+		    android:id="@+id/linearLayout1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+
+			<ImageView
+			    android:id="@+id/logo"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/amsoftware_tran" 
+			    android:layout_gravity="center_horizontal"/>
+
+		</LinearLayout>
+		    
+	
+
+		<LinearLayout
+		    android:id="@+id/whole"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingRight="3dip"
+		    android:orientation="horizontal" 
+		    android:gravity="center_horizontal" 
+		    android:visibility="gone">
+	
+
+		    <ImageView
+		        android:id="@+id/barclays"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/powerby_tran" 
+		        android:visibility="invisible"/>
+
+		    <ImageView
+		        android:id="@+id/ping"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/anderson_tran" 
+		        android:visibility="invisible"/>
+
+		    <ImageView
+		        android:id="@+id/it"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/mai_tran" 
+		        android:visibility="invisible"/>
+		    
+		</LinearLayout>
+    		
+	</LinearLayout>
+</LinearLayout>

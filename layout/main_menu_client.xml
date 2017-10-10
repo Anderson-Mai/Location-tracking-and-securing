@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+    
+    <ScrollView 
+        android:id="@+id/scrollView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" 
+		android:background="#00000000">
+        
+    
+    <RelativeLayout
+        		  android:id="@+id/wrapper"
+			      android:layout_width="wrap_content"
+				  android:layout_height="wrap_content" 
+				  android:background="#00000000">
+        
+        
+     <TextView  android:id="@+id/top_line"
+			      android:layout_width="match_parent"
+				  android:layout_height="3dp" 
+				  android:background="#0080B4">
+	   </TextView>  
+	   
+	   <LinearLayout 
+	         android:id="@+id/headerBarSection"
+	         android:layout_width="match_parent"
+             android:layout_height="80dp"
+             android:layout_marginRight="3dp"
+             android:layout_marginLeft="3dp"
+             android:layout_marginTop="3dp"
+             android:layout_marginBottom="20dp"
+             android:layout_below="@+id/top_line"
+             android:background="@drawable/green320">
+             
+		   <LinearLayout 
+		         android:id="@+id/headerBar"
+		         android:layout_width="wrap_content"
+	             android:layout_height="60dp"
+	             android:background="#00000000"
+	             android:layout_gravity="center"
+	             android:orientation="horizontal">
+		       
+		       
+	       <Button
+	           	 	android:id="@+id/unreadMsg"
+	            	android:layout_width="60dp"
+	            	android:layout_height="60dp"
+	            	android:layout_marginRight="10dp"
+	            	android:layout_marginLeft="20dp"
+	            	android:background="@drawable/tracking_points">
+	   		</Button>
+		   
+	       
+		    <TextView
+			    android:id="@+id/HeaderLayout"
+		        android:layout_width="225dp" 
+		        android:background="#00000000"
+		        style="@style/screenTitleText"
+		        android:layout_height="60dp" 
+		        android:text="Tracking an object "
+				android:textColor="@color/white"
+				android:textSize="20sp"
+				android:textStyle="italic"
+				android:typeface="sans" />
+	
+	   		</LinearLayout>
+   		</LinearLayout>
+   		  <!--    <Button
+           	 	android:id="@+id/RemoteMode"
+                android:layout_width="50dp"
+            	android:layout_height="40dp"
+            	android:background="@drawable/btn_orange"
+            	android:gravity="center"
+            	android:layout_marginRight="10dp"
+            	android:layout_marginTop="5dp"
+            	android:layout_marginBottom="5dp"
+            	android:text="Remote"
+            	android:typeface="sans"
+            	android:visibility="gone"
+            	style="@style/ButtonText18"
+            	android:layout_alignParentRight="true">
+            	
+   			</Button>
+   			-->
+   		
+		        <LinearLayout
+		        		android:id="@+id/setupSection"
+		        		android:layout_width="300dp" 
+		       			android:layout_gravity="center_horizontal"
+		       			android:layout_height="40dip"
+		       			android:layout_marginTop="10dp"
+		       			android:layout_marginLeft="20dp"
+		       			android:layout_below="@+id/headerBarSection"
+		        		android:orientation="horizontal">
+		     
+			   			 <Button
+			           	 	android:id="@+id/Setting"
+			            	android:layout_width="50dp"
+			            	android:layout_height="40dp"
+			            	android:background="@drawable/contact_list_one"
+			            	android:layout_gravity="center">
+		   				</Button>
+		   				
+		   				<TextView
+			           	 	android:id="@+id/setuptBar"
+			            	android:layout_width="200dp"
+			            	android:layout_height="40dp"
+			            	android:background="#00000000"
+			            	android:layout_marginLeft="10dp"
+			            	android:text="Select sensitive case"
+			            	android:textSize="16sp"
+			            	android:textColor="@color/black"
+			            	android:textStyle="italic"
+			            	android:clickable="true"
+			            	android:gravity="left|center_vertical">	            	
+		   				</TextView>
+	   			  </LinearLayout>
+	   			  
+		         <LinearLayout
+		        		android:id="@+id/trackingSectionOne"
+		        		android:layout_width="match_parent" 
+		       			android:layout_gravity="center_horizontal"
+		       			android:layout_marginTop="10dp"
+		       			android:layout_height="40dip" 
+		       			android:layout_below="@+id/setupSection" 
+		       			android:layout_marginLeft="20dp"
+		        		android:orientation="horizontal">
+		     
+			   			 <Button
+			           	 	android:id="@+id/Tracking"
+			            	android:layout_width="50dp"
+			            	android:layout_height="40dp"
+			            	android:background="@drawable/tracking_points"
+			            	android:layout_gravity="center">
+		   				</Button>
+
+			   			 <TextView
+			   			     android:id="@+id/Trackingbar"
+			   			     android:layout_width="200dp"
+			   			     android:layout_height="40dp"
+			   			     android:layout_marginLeft="10dp"
+			   			     android:background="#00000000"
+			   			     android:gravity="left|center_vertical"
+			   			     android:text="Tracking in foreground"
+			   			     android:textColor="@color/black"
+			   			     android:textStyle="italic"
+			   			     android:clickable="true"
+			   			     android:textSize="16sp" />
+
+	   			  </LinearLayout>
+		 
+		             
+	   			  
+		              <LinearLayout
+		        		android:id="@+id/trackingSectionTwo"
+		        		android:layout_width="match_parent" 
+		       			android:layout_gravity="center_horizontal"
+		       			android:layout_marginTop="10dp"
+		       			android:layout_height="40dip" 
+		       			android:layout_below="@+id/trackingSectionOne" 
+		       			android:layout_marginLeft="20dp"
+		        		android:orientation="horizontal">
+		     
+			   			 <Button
+			           	 	android:id="@+id/TrackingInBack"
+			            	android:layout_width="50dp"
+			            	android:layout_height="40dp"
+			            	android:background="@drawable/tracking_points"
+			            	android:layout_gravity="center">
+		   				</Button>
+
+			   			 <TextView
+			   			     android:id="@+id/TrackingbarInBack"
+			   			     android:layout_width="200dp"
+			   			     android:layout_height="40dp"
+			   			     android:layout_marginLeft="10dp"
+			   			     android:background="#00000000"
+			   			     android:gravity="left|center_vertical"
+			   			     android:text="Tracking in background"
+			   			     android:textColor="@color/black"
+			   			     android:textStyle="italic"
+			   			     android:clickable="true"
+			   			     android:textSize="16sp" />
+
+	   			  </LinearLayout>
+		 
+		          <LinearLayout
+		        		android:id="@+id/resetSection"
+		        		android:layout_width="300dp" 
+		        		android:layout_below="@+id/trackingSectionTwo"
+		       			android:layout_gravity="center_horizontal"
+		       			android:layout_height="40dip" 
+		       			android:layout_marginTop="10dp"
+		       			android:layout_marginLeft="20dp"
+		        		android:orientation="horizontal">
+		     
+			   			 <Button
+			           	 	android:id="@+id/resetApp"
+			            	android:layout_width="50dp"
+			            	android:layout_height="40dp"
+			            	android:background="@drawable/app_reset"
+			            	android:layout_gravity="center">
+		   				</Button>
+		   				
+		   				<TextView
+			           	 	android:id="@+id/resetBar"
+			            	android:layout_width="200dp"
+			            	android:layout_height="40dp"
+			            	android:background="#00000000"
+			            	android:layout_marginLeft="10dp"
+			            	android:text="Reset App"
+			            	android:textSize="16sp"
+			            	android:textColor="@color/black"
+			            	android:textStyle="italic"
+			            	android:clickable="true"
+			            	android:gravity="left|center_vertical">	            	
+		   				</TextView>
+	   			  </LinearLayout>
+	   			  
+		              <LinearLayout
+		        		android:id="@+id/closeSection"
+		        		android:layout_width="300dp" 
+		       			android:layout_gravity="center_horizontal"
+		       			android:layout_height="40dip" 
+		       			android:layout_marginTop="10dp"
+		       			android:layout_below="@+id/resetSection"
+		       			android:layout_marginLeft="20dp"
+		        		android:orientation="horizontal">
+		     
+			   			 <Button
+			           	 	android:id="@+id/closeApp"
+			            	android:layout_width="50dp"
+			            	android:layout_height="40dp"
+			            	android:background="@drawable/app_close"
+			            	android:layout_gravity="center">
+		   				</Button>
+		   				
+		   				<TextView
+			           	 	android:id="@+id/closeAppBar"
+			            	android:layout_width="200dp"
+			            	android:layout_height="40dp"
+			            	android:background="#00000000"
+			            	android:layout_marginLeft="10dp"
+			            	android:text="Close App"
+			            	android:textSize="16sp"
+			            	android:textColor="@color/black"
+			            	android:textStyle="italic"
+			            	android:clickable="true"
+			            	android:gravity="left|center_vertical">	            	
+		   				</TextView>
+	   			  </LinearLayout>
+		 
+		        
+	   			  
+		              <LinearLayout
+		        		android:id="@+id/removeAppSection"
+		        		android:layout_width="300dp" 
+		        		android:layout_below="@+id/closeSection"
+		       			android:layout_gravity="center_horizontal"
+		       			android:layout_height="40dip" 
+		       			android:layout_marginLeft="20dp"
+		       			android:layout_marginTop="10dp"
+		        		android:orientation="horizontal">
+		     
+			   			 <Button
+			           	 	android:id="@+id/removeApp"
+			            	android:layout_width="50dp"
+			            	android:layout_height="40dp"
+			            	android:background="@drawable/delete_image"
+			            	android:layout_gravity="center">
+		   				</Button>
+		   				
+		   				<TextView
+			           	 	android:id="@+id/removeAppBar"
+			            	android:layout_width="200dp"
+			            	android:layout_height="40dp"
+			            	android:background="#00000000"
+			            	android:layout_marginLeft="10dp"
+			            	android:text="Remove App"
+			            	android:textSize="16sp"
+			            	android:textColor="@color/black"
+			            	android:textStyle="italic"
+			            	android:clickable="true"
+			            	android:gravity="left|center_vertical">	            	
+		   				</TextView>
+	   			  </LinearLayout>
+		 
+     	</RelativeLayout>
+     </ScrollView>
+	 
+</RelativeLayout>

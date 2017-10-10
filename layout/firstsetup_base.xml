@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    >
+      <TextView
+    	      android:id="@+id/header" 
+    	      android:layout_marginTop="5dip"
+    	      android:layout_width="fill_parent"
+    	      android:layout_height="30dp" 
+    	      android:layout_marginLeft="10dp"
+    	      android:layout_marginRight="10dp"
+    	      android:gravity="center"
+    	      android:text="Account Set Up"
+    	      android:textColor="#FFFFFF"
+    	      android:textSize="18sp"
+    	      android:background="@drawable/titlebar"/>
+      
+     <ScrollView
+    	    android:id="@+id/GMailSetup"
+    	    android:layout_width="260dp"
+    	    android:layout_height="match_parent"
+    	     android:layout_marginLeft="20dip"
+             android:layout_marginRight="20dip"
+             android:layout_below="@+id/header"
+    	    android:layout_centerInParent="true">
+         
+     <LinearLayout
+    	    android:id="@+id/GMailSetupSection"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="3dp"
+    	    android:orientation="vertical"
+    	    >
+    	    
+         	<TextView 
+			            android:id="@+id/GmailAddressTitle"
+			       		android:layout_height="25dip"
+						android:layout_width="fill_parent"
+						android:background="#00000000"
+						android:text="Base Phone Number"
+					    android:textStyle="bold"
+						android:textColor="#000000"
+						android:layout_gravity="center_horizontal"
+						android:gravity="center"
+						android:textSize="12sp"
+						android:layout_marginTop="3dip">
+		</TextView>
+
+
+    <LinearLayout
+    	    android:id="@+id/GMailPasswordRegister"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="3dp"
+    	    android:layout_marginRight="3dp"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_marginTop="3dp"
+    	    android:orientation="vertical"
+    	    android:layout_below="@+id/GmailChanged"
+    	    android:background="#00000000" >
+    	    
+    	    <EditText
+             android:id="@+id/GmailAddress"
+             android:layout_width="fill_parent"
+             android:layout_height="35dip"
+             android:layout_marginLeft="10dip"
+             android:layout_marginRight="10dip"
+             android:background="@drawable/bounded_white_rectangular"
+             android:ems="10"
+				android:maxLength="11"
+             android:gravity="center"
+             android:hint="Eleven Phone Digits"
+             android:inputType="textPhonetic"
+             android:layout_marginTop="10dp"
+             android:textColor="@color/text_black"
+             android:textColorHint="@color/text_hint_color_light_gray"
+             android:textCursorDrawable="@color/blue"
+             android:textSize="14sp">
+
+    	</EditText>
+    	
+    	 </LinearLayout>    
+    	 
+    
+    	    <TextView
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="35dip"
+    	        android:layout_gravity="center_horizontal|bottom"
+    	        android:background="#00000000"
+    	        android:gravity="center"
+    	        android:layout_marginTop="3dp"
+    	        android:text="Device Phone Number"
+    	        android:textColor="@android:color/black"
+    	        android:textSize="12sp"
+    	        android:textStyle="bold"
+    	        android:typeface="sans" />
+
+    	   <LinearLayout
+    	    android:id="@+id/BaseGMaiREgister"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="3dp"
+    	    android:layout_marginRight="3dp"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_marginTop="3dp"
+    	    android:orientation="vertical"
+    	    android:background="#00000000" >
+    	    
+	    	<EditText
+	    	    android:id="@+id/anotherPartyEmail"
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="35dip"
+	    	    android:layout_gravity="center"
+	    	    android:background="@drawable/bounded_white_rectangular"
+	    	    android:gravity="center"
+	    	    android:layout_marginLeft="10dp"
+	    	    android:layout_marginRight="10dp"
+				android:inputType="textPhonetic"
+				android:hint="Eleven Phone Digits"
+				android:maxLength="11"
+	    	    android:textColor="@color/black"
+	    	    android:textColorHint="@color/text_hint_color_light_gray"
+	    	    android:textCursorDrawable="@color/blue"
+	    	    android:textSize="14sp"
+	    	    android:typeface="sans" 
+	    	    android:layout_marginTop="10dp"
+	    	    android:layout_marginBottom="7dp">
+	    	</EditText>
+    	
+    	 
+         </LinearLayout>
+
+          <LinearLayout
+            android:id="@+id/bottomSection"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="#00000000"
+            android:layout_marginBottom="10dp"
+        	android:weightSum="2">
+			
+             <TextView 
+			    android:layout_width="0dp"
+				android:layout_height="35dip"
+				android:layout_weight="0.25">
+			</TextView>
+             
+         <Button
+            android:id="@+id/submitButton"
+            android:layout_width="0dp"
+            android:layout_height="34dip"
+            android:background="@drawable/btn_blue_2"
+            android:layout_gravity="clip_vertical"
+            android:gravity="center"
+            android:text="Connect"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:layout_weight="0.70"/>
+        
+         <TextView 
+			    android:layout_width="0dp"
+				android:layout_height="35dip"
+				android:layout_weight="0.10">
+			</TextView>
+        
+         <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0dip"
+            android:layout_height="35dip"
+            android:background="@drawable/btn_cancel_red"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:layout_weight="0.70"/>
+       
+          <TextView 
+			    android:layout_width="0dp"
+				android:layout_height="25dip" 
+				android:layout_weight="0.25">
+			</TextView>
+       
+        </LinearLayout>
+        
+    </LinearLayout>
+    	
+    	   
+   
+    
+  </ScrollView>  	
+  
+   
+</RelativeLayout>
